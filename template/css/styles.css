@@ -33,7 +33,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #0d6efd;
+  --bs-primary: #04346c;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -48,7 +48,7 @@
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
-  --bs-dark-rgb: 33, 37, 41;
+  --bs-dark-rgb: 4, 52, 108;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-rgb: 33, 37, 41;
@@ -169,6 +169,11 @@ address {
   margin-bottom: 1rem;
   font-style: normal;
   line-height: inherit;
+}
+
+.btn-outline {
+    color: #0d6efd;
+    border-color: white;
 }
 
 ol,
@@ -489,6 +494,7 @@ progress {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
+    color: white;
 }
 
 .display-1 {
@@ -4679,7 +4685,7 @@ textarea.form-control-lg {
   }
 }
 .accordion-button:not(.collapsed) {
-  color: #0c63e4;
+  color: #04346c;
   background-color: #e7f1ff;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
 }
@@ -4708,7 +4714,7 @@ textarea.form-control-lg {
 }
 .accordion-button:focus {
   z-index: 3;
-  border-color: #86b7fe;
+  border-color: #3b548c;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
@@ -4896,6 +4902,10 @@ textarea.form-control-lg {
 .btn .badge {
   position: relative;
   top: -1px;
+}
+
+.btn-yellow { 
+    background-color: #ebbf28;
 }
 
 .alert {
@@ -7480,6 +7490,7 @@ textarea.form-control-lg {
 .py-5 {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
+background: linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.95)), url(../assets/doodle.jpeg);
 }
 
 .pt-0 {
@@ -7624,6 +7635,7 @@ textarea.form-control-lg {
 
 .fw-normal {
   font-weight: 400 !important;
+    color: white;
 }
 
 .fw-bold {
@@ -7632,6 +7644,21 @@ textarea.form-control-lg {
 
 .fw-bolder {
   font-weight: bolder !important;
+    color: white;
+}
+
+.bg-blue {
+    background-color: #04346c !important;
+}
+
+.fw-bolder-black {
+    font-weight: bolder !important;
+    color: black;
+}
+
+.underline {
+    border-bottom:6px solid #ebbf28;
+    padding-bottom:2px;
 }
 
 .lh-1 {
