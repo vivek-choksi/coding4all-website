@@ -12,6 +12,7 @@
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 
@@ -289,12 +290,9 @@
             <div class="container">
                 <div class="row">
                     <style>
-                        .infiniteslide img {
+                        .slick img {
                             height: 230px;
                             width: 200px;
-                        }
-
-                        .infiniteslide img {
                             object-fit: cover;
                             object-position: top;
                         }
@@ -305,7 +303,7 @@
                             color: #0072b1;
                         }
                     </style>
-                    <div class="infiniteslide">
+                    <div class="slick">
                         <a target="_blank" class="text-decoration-none link-dark stretched-link" href="https://www.linkedin.com/in/jainaakash1991/">
                             <li class="card p-2 m-3">
                                 <img class="card-img-top" src="assets/teachers/Aakash_Optum_Austin_Texas.jpeg" alt="" />
@@ -632,7 +630,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 infiniteslide">
+                    <div class="col-lg-12 slick">
                         <div class="card rounded mx-3" style="width: 18rem;">
                             <div class="card-body text-center">
                                 <h5 class="card-title">
@@ -1077,16 +1075,41 @@
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/infiniteslidev2/infiniteslidev2.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script type="text/javascript">
-        $(function () {
-            $('.infiniteslide').infiniteslide({
-                'speed': 100, //speed this is px/min
-                'direction': 'left', //choose  up/down/left/right
-                'pauseonhover': true, //if true,stop onmouseover
-                'responsive': false, //width/height recalculation on window resize. child element's width/height define %/vw/vh,this set true.
-                'clone': 4 //if child elements are too few (elements can't "infinite"), set 2 or over.
+        $(document).ready(function() {
+            $('.slick').slick({
+                slidesToShow: 1,
+                arrows: false,
+                slidesToScroll: 1,
+                infinite: true,
+                centerMode: true,
+                autoplay: true,
+                autoplaySpeed: 0,
+                speed: 2000,
+                pauseOnHover: true,
+                variableWidth: true,
+                buttons: false,
+                cssEase: 'linear',
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            slidesToShow: 1
+                        }
+                    }
+                ]
             });
         });
     </script>
