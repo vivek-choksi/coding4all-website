@@ -302,6 +302,16 @@
                         .li-color {
                             color: #0072b1;
                         }
+                        .slick img.company-logo, .slick div.company-logo {
+                            height: 25px;
+                            width: auto;
+                            margin-bottom: 20px;
+                        }
+                        .slick p.company-name {
+                            margin-left: 10px;
+                            margin-bottom: 10px;
+                            font-weight: bold;
+                        }
                     </style>
                     <div class="slick">
                         <a target="_blank" class="text-decoration-none link-dark " href="https://www.linkedin.com/in/jainaakash1991/">
@@ -313,8 +323,7 @@
                                         <i class="bi bi-linkedin li-color"></i>
                                     </div>
                                     <div class="d-flex">
-                                        <i class="bi bi-briefcase pr-1"></i> 
-                                        <p class="card-text pr-1">Optum</p>
+                                        <img class="company-logo" src="./assets/companies/optum.png" alt="Optum">
                                     </div>
                                     <div class="d-flex">
                                         <i class="bi bi-geo-alt"></i><div class="mb-2">Austin, Texas</div>
@@ -325,15 +334,15 @@
 
                         <a target="_blank" class="text-decoration-none link-dark " href="https://www.linkedin.com/in/abhishekkateliya/">
                             <li class="card p-2 m-3">
-                                <img class="card-img-top" src="assets/teachers/Abhishek_TradeSun_Mumbai.png" alt="" />
+                                <img class="card-img-top" src="assets/teachers/Abhishek_TradeSun_Mumbai.png" alt="TradeSun" />
                                 <div class="card-body p-4">
                                     <div class="d-flex">
                                         <h5 class="card-title mb-2 pr-1">Abhishek</h5>
                                         <i class="bi bi-linkedin li-color"></i>
                                     </div>
                                         <div class="d-flex">
-                                            <i class="bi bi-briefcase pr-1"></i>
-                                            <p class="card-text pr-1">TradeSun</p>
+                                            <img class="company-logo" src="./assets/companies/trade sun.png" alt="Trade Sun">
+                                            <p class="company-name">Trade Sun</p>
                                         </div>
                                         <div class="d-flex">
                                             <i class="bi bi-geo-alt"></i><div class="mb-2">Mumbai</div>
@@ -344,15 +353,15 @@
 
                         <a target="_blank" class="text-decoration-none link-dark " href="https://www.linkedin.com/in/aditimewada/">
                             <li class="card p-2 m-3">
-                                <img class="card-img-top" src="assets/teachers/Aditi_JP_Morgan_Mumbai.jpeg" alt="" />
+                                <img class="card-img-top" src="assets/teachers/Aditi_JP_Morgan_Mumbai.jpeg" alt="JP Morgan" />
                                 <div class="card-body p-4">
                                     <div class="d-flex">
                                         <h5 class="card-title mb-2 pr-1">Aditi</h5>
                                         <i class="bi bi-linkedin li-color"></i>
                                     </div>
                                         <div class="d-flex">
-                                            <i class="bi bi-briefcase pr-1"></i>
-                                            <p class="card-text pr-1">JP Morgan</p>
+                                            <img class="company-logo" src="./assets/companies/jp morgan chase.png" alt="JP Morgan">
+                                            <p class="company-name">JP Morgan</p>
                                         </div>
                                         <div class="d-flex">
                                             <i class="bi bi-geo-alt"></i><div class="mb-2">Mumbai</div>
@@ -372,8 +381,16 @@
                                     </div>
                                     
                                         <div class="d-flex">
-                                            <i class="bi bi-briefcase pr-1"></i>
-                                            <p class="card-text pr-1">eMetric</p>
+                                            <!-- emetric image is too large so had to use it as a background image and crop it -->
+                                            <div style="
+                                                background-image: url(./assets/companies/emetric.jpg); 
+                                                height: 24px;
+                                                width: 86px;
+                                                background-position: center;
+                                                z-index: 2;
+                                                background-repeat: no-repeat;
+                                                background-size: cover;" class="company-logo">
+                                            </div>
                                         </div>
                                         <div class="d-flex">
                                             <i class="bi bi-geo-alt"></i><div class="mb-2">San Antonio</div>
@@ -391,8 +408,7 @@
                                         <i class="bi bi-linkedin li-color"></i>
                                     </div>
                                     <div class="d-flex">
-                                        <i class="bi bi-briefcase pr-1"></i>
-                                        <p class="card-text pr-1">Cisco</p>
+                                        <img class="company-logo" src="./assets/companies/cisco.png" alt="Cisco">    
                                     </div>
                                     <div class="d-flex">
                                         <i class="bi bi-geo-alt"></i><div class="mb-2">Bengaluru</div>
@@ -410,8 +426,7 @@
                                         <i class="bi bi-linkedin li-color"></i>
                                     </div>
                                     <div class="d-flex">
-                                        <i class="bi bi-briefcase pr-1"></i>
-                                        <p class="card-text pr-1">Trimble</p>
+                                        <img class="company-logo" src="./assets/companies/trimble.png" alt="Trimble">    
                                     </div>
                                     <div class="d-flex">
                                         <i class="bi bi-geo-alt"></i><div class="mb-2">Chennai</div>
@@ -429,8 +444,8 @@
                                         <i class="bi bi-linkedin li-color"></i>
                                     </div>
                                     <div class="d-flex">
-                                        <i class="bi bi-briefcase pr-1"></i>
-                                        <p class="card-text pr-1">Amazon</p>
+                                        <img class="company-logo" src="./assets/companies/amazon.png" alt="Amazon">    
+                                        <p class="company-name">Amazon</p>
                                     </div>
                                     <div class="d-flex">
                                         <i class="bi bi-geo-alt"></i><div class="mb-2">Seattle</div>
@@ -448,8 +463,7 @@
                                         <i class="bi bi-linkedin li-color"></i>
                                     </div>
                                     <div class="d-flex">
-                                        <i class="bi bi-briefcase pr-1"></i>
-                                        <p class="card-text pr-1">Discovery</p>
+                                        <img class="company-logo" src="./assets/companies/discovery.png" alt="Discovery">    
                                     </div>
                                     <div class="d-flex">
                                         <i class="bi bi-geo-alt"></i><div class="mb-2">New Jersey</div>
@@ -467,8 +481,8 @@
                                         <i class="bi bi-linkedin li-color"></i>
                                     </div>
                                         <div class="d-flex">
-                                            <i class="bi bi-briefcase pr-1"></i>
-                                            <p class="card-text pr-1">Amazon</p>
+                                            <img class="company-logo" src="./assets/companies/amazon.png" alt="Amazon">    
+                                            <p class="company-name">Amazon</p>    
                                         </div>
                                         <div class="d-flex">
                                             <i class="bi bi-geo-alt"></i><div class="mb-2">Mumbai</div>
@@ -487,8 +501,15 @@
                                         <i class="bi bi-linkedin li-color"></i>
                                     </div>
                                         <div class="d-flex">
-                                            <i class="bi bi-briefcase pr-1"></i>
-                                            <p class="card-text pr-1">Societe Generale</p>
+                                            <div style="
+                                                background-image: url(./assets/companies/societe-generale.png); 
+                                                height: 24px;
+                                                width: 100%;
+                                                background-position: center;
+                                                z-index: 2;
+                                                background-repeat: no-repeat;
+                                                background-size: cover;" class="company-logo">
+                                            </div>
                                         </div>
                                         <div class="d-flex">
                                             <i class="bi bi-geo-alt"></i><div class="mb-2">Bengaluru</div>
@@ -506,8 +527,7 @@
                                         <i class="bi bi-linkedin li-color"></i>
                                     </div>
                                         <div class="d-flex">
-                                            <i class="bi bi-briefcase pr-1"></i>
-                                            <p class="card-text pr-1">Viasat</p>
+                                            <img class="company-logo" src="./assets/companies/Viasat.svg" alt="Viasat">    
                                         </div>
                                         <div class="d-flex">
                                             <i class="bi bi-geo-alt"></i><div class="mb-2">Austin, Texas</div>
@@ -527,6 +547,7 @@
                                     <div class="d-flex">
                                         <!-- <i class="bi bi-briefcase pr-1"></i>  -->
                                         <p class="card-text pr-1">&nbsp;</p>
+                                        <p class="card-text pr-1">&nbsp;</p>
                                     </div>
                                     <div class="d-flex">
                                         <i class="bi bi-geo-alt"></i><div class="mb-2">Austin, Texas</div>
@@ -544,8 +565,7 @@
                                         <i class="bi bi-linkedin li-color"></i>
                                     </div>
                                     <div class="d-flex">
-                                        <i class="bi bi-briefcase pr-1"></i> 
-                                        <p class="card-text pr-1">E&Y</p>
+                                        <img class="company-logo" src="./assets/companies/e&y.png" alt="E&Y">    
                                     </div>
                                     <div class="d-flex">
                                         <i class="bi bi-geo-alt"></i><div class="mb-2">Atlanta, Georgia</div>
@@ -563,8 +583,7 @@
                                         <i class="bi bi-linkedin li-color"></i>
                                     </div>
                                     <div class="d-flex">
-                                        <i class="bi bi-briefcase pr-1"></i> 
-                                        <p class="card-text pr-1">Interactive Broker</p>
+                                        <img class="company-logo" src="./assets/companies/msci.png" alt="MSCI">    
                                     </div>
                                     <div class="d-flex">
                                         <i class="bi bi-geo-alt"></i><div class="mb-2">Mumbai</div>
